@@ -5,17 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>TO DO Assignment</title>
 </head>
 <body>
+    <!-- dark mode -->
     <div class = 'toggle-switch'>
         <label class="toggle" id="toggle-label" for="checkbox">
         <input type="checkbox" id="checkbox">
         <span class="slider"></span>
         <span class="toggle-labels" data-on="off" data-off="on"></span>
         </label>
+        <span id="dmlabel">dark mode</span>
+    </div>
+    <!-- bgin assignment-->
+
+    <h1>To Do Assignment</h1>
+    <p>Make a list of things to do. Check them off by clicking on them or delete them by pressing the remove
+        button, come back later and they are still there!</p>
+
+    <!-- form -->
+    <div>
+    <form id="form1">
+    <label for="todoItem">Add item:
+        <input placeholder="win lottery ..." name="todoItem" id="todoItem" type="text">
+    </label>
+    <input type="submit">
+    </form>
     </div>
 
+    <ul id="thelist"></ul>
 
     <!-- scripts only below here -->
     <script src="app.js"></script>
